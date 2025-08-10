@@ -30,7 +30,7 @@ const Header: React.FC = () => {
               transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
             >
               <img
-                src="/assets/headshot.png"
+                src="assets/headshot.png"
                 alt="Noah Blauensteiner"
                 className="rounded-full w-48 h-48 md:w-56 md:h-56 object-cover shadow-2xl border-4 border-white dark:border-gray-700 mx-auto"
               />

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { CalendarPlus, Bot, Lightbulb, ChevronDown, AppWindow, Languages } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from '../contexts/LanguageContext';
 
 interface Feature {
   icon: React.ReactNode;
@@ -9,45 +10,8 @@ interface Feature {
   summary: string;
   details: string;
   color: string;
+  learnMore: string;
 }
-
-const features: Feature[] = [
-  {
-    icon: <CalendarPlus size={32} />,
-    title: 'Automated Scheduling & Invoicing',
-    summary: 'Streamline your bookings with automated calendar events, invoicing, and customer confirmations.',
-    details: 'Integrate directly with your Google Calendar and Drive. When a customer books an appointment, an event is created, a professional invoice is generated and stored, and a confirmation email with a calendar invite is sent automatically. Hassle-free for you, seamless for them.',
-    color: 'brand-purple',
-  },
-  {
-    icon: <Bot size={32} />,
-    title: 'AI-Powered Customer Support',
-    summary: 'Provide instant, accurate answers to customer questions with a smart chatbot trained on your business data.',
-    details: 'Leverage the power of AI to create a custom chatbot or smart search function. It securely accesses your provided business information to answer frequent questions, freeing up your time and delighting your customers with 24/7 support.',
-    color: 'brand-magenta',
-  },
-  {
-    icon: <Lightbulb size={32} />,
-    title: 'Bespoke AI Solutions',
-    summary: 'Have a unique idea? We build custom tools tailored to your specific needs, like a personal availability planner.',
-    details: 'From personal organization tools to complex business logic, we can bring any idea to life. For example, a custom availability webpage that lets friends suggest activities, which AI then helps to organize and schedule. If you can dream it, we can prototype it.',
-    color: 'brand-pink',
-  },
-  {
-    icon: <AppWindow size={32} />,
-    title: 'Progressive Web Apps (PWAs)',
-    summary: "Turn your website into an installable app, accessible from the user's home screen.",
-    details: 'Progressive Web Apps provide an app-like experience directly from the web. Users can install your site to their home screen, receive push notifications, and even use it offline. This allows you to bypass the complex and costly app store submission process while still delivering a rich, accessible user experience.',
-    color: 'brand-orange',
-  },
-  {
-    icon: <Languages size={32} />,
-    title: 'Effortless Multi-Language Support',
-    summary: 'Engage a global audience by providing your app in their native language.',
-    details: 'In a highly connected and multi-lingual environment like the Netherlands, offering your services in multiple languages is crucial for a better user experience. We can seamlessly integrate language-switching capabilities, allowing users to navigate your app in their preferred language. This greatly enhances user satisfaction and broadens your reach.',
-    color: 'brand-teal',
-  },
-];
 
 const FeatureCard: React.FC<{ feature: Feature }> = ({ feature }) => {
   const [isExpanded, setExpanded] = useState(false);
@@ -107,7 +71,7 @@ const FeatureCard: React.FC<{ feature: Feature }> = ({ feature }) => {
           >
             <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{feature.details}</p>
-                <a href="#" className="text-brand-pink hover:underline font-semibold mt-3 inline-block">Learn More &rarr;</a>
+                <a href="#" className="text-brand-pink hover:underline font-semibold mt-3 inline-block">{feature.learnMore} &rarr;</a>
             </div>
           </motion.div>
         )}
@@ -121,6 +85,50 @@ const InnovativeFeatures: React.FC = () => {
         triggerOnce: true,
         threshold: 0.1,
     });
+    const { t } = useTranslation();
+
+    const features: Feature[] = [
+      {
+        icon: <CalendarPlus size={32} />,
+        title: t('innovativeFeatures.feature1.title'),
+        summary: t('innovativeFeatures.feature1.summary'),
+        details: t('innovativeFeatures.feature1.details'),
+        learnMore: t('innovativeFeatures.feature1.learnMore'),
+        color: 'brand-purple',
+      },
+      {
+        icon: <Bot size={32} />,
+        title: t('innovativeFeatures.feature2.title'),
+        summary: t('innovativeFeatures.feature2.summary'),
+        details: t('innovativeFeatures.feature2.details'),
+        learnMore: t('innovativeFeatures.feature2.learnMore'),
+        color: 'brand-magenta',
+      },
+      {
+        icon: <Lightbulb size={32} />,
+        title: t('innovativeFeatures.feature3.title'),
+        summary: t('innovativeFeatures.feature3.summary'),
+        details: t('innovativeFeatures.feature3.details'),
+        learnMore: t('innovativeFeatures.feature3.learnMore'),
+        color: 'brand-pink',
+      },
+      {
+        icon: <AppWindow size={32} />,
+        title: t('innovativeFeatures.feature4.title'),
+        summary: t('innovativeFeatures.feature4.summary'),
+        details: t('innovativeFeatures.feature4.details'),
+        learnMore: t('innovativeFeatures.feature4.learnMore'),
+        color: 'brand-orange',
+      },
+      {
+        icon: <Languages size={32} />,
+        title: t('innovativeFeatures.feature5.title'),
+        summary: t('innovativeFeatures.feature5.summary'),
+        details: t('innovativeFeatures.feature5.details'),
+        learnMore: t('innovativeFeatures.feature5.learnMore'),
+        color: 'brand-teal',
+      },
+    ];
 
     const containerVariants: Variants = {
         hidden: { opacity: 0 },
@@ -152,9 +160,9 @@ const InnovativeFeatures: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-blue dark:text-white">Integrate Innovative Features</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-blue dark:text-white">{t('innovativeFeatures.title')}</h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Go beyond a simple webpage. We embed powerful, customized AI-driven tools directly into your prototype.
+            {t('innovativeFeatures.subtitle')}
           </p>
         </motion.div>
 

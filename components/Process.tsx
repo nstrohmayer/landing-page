@@ -1,31 +1,8 @@
-
 import React from 'react';
 import { motion, type Variants } from 'framer-motion';
+import { useTranslation } from '../contexts/LanguageContext';
 
-const processSteps = [
-    {
-        title: "(Optional) Let's Talk",
-        description: "We can sit together and talk about what you want to modernize, try out, or build.",
-    },
-    {
-        title: "I Prototype Your Idea For Free",
-        description: "I'll take your concept and build an interactive prototype, bringing your idea to life at no cost to you.",
-    },
-    {
-        title: "We Review & Adapt",
-        description: "We'll sit down together to review the prototype. We can make live adaptations and discuss how to incrementally make the application better.",
-    },
-    {
-        title: "Ongoing Collaboration",
-        description: "If you want support, we can collaborate, combining your ideas with my experience to visualize and digitalize them.",
-    },
-    {
-        title: "Iterate and Evolve",
-        description: "The process is iterative. We repeat the collaboration and adaptation cycle to continuously refine and enhance your application.",
-    },
-];
-
-const Card = ({ step }: { step: typeof processSteps[0] }) => (
+const Card = ({ step }: { step: { title: string; description: string; } }) => (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full">
         <h3 className="text-xl font-bold text-brand-dark-blue dark:text-gray-100">{step.title}</h3>
         <p className="mt-2 text-gray-600 dark:text-gray-300">{step.description}</p>
@@ -34,6 +11,31 @@ const Card = ({ step }: { step: typeof processSteps[0] }) => (
 
 
 const Process: React.FC = () => {
+    const { t } = useTranslation();
+
+    const processSteps = [
+        {
+            title: t('process.step1.title'),
+            description: t('process.step1.description'),
+        },
+        {
+            title: t('process.step2.title'),
+            description: t('process.step2.description'),
+        },
+        {
+            title: t('process.step3.title'),
+            description: t('process.step3.description'),
+        },
+        {
+            title: t('process.step4.title'),
+            description: t('process.step4.description'),
+        },
+        {
+            title: t('process.step5.title'),
+            description: t('process.step5.description'),
+        },
+    ];
+
     return (
         <section id="process" className="bg-gray-100 dark:bg-black py-20 sm:py-24 overflow-hidden">
             <div className="container mx-auto px-6">
@@ -44,8 +46,8 @@ const Process: React.FC = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.7 }}
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-blue dark:text-white">Our Collaborative Process</h2>
-                    <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">A clear and iterative journey from idea to reality.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-blue dark:text-white">{t('process.title')}</h2>
+                    <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">{t('process.subtitle')}</p>
                 </motion.div>
 
                 <div className="relative">

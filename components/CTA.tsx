@@ -1,8 +1,9 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from '../contexts/LanguageContext';
 
 const CTA: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section id="cta" className="bg-brand-dark-blue">
       <div className="container mx-auto px-6 py-20 sm:py-24 text-center">
@@ -13,7 +14,7 @@ const CTA: React.FC = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="text-3xl md:text-4xl font-extrabold text-white"
         >
-            Ready to get started?
+            {t('cta.title')}
         </motion.h2>
         <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -22,7 +23,7 @@ const CTA: React.FC = () => {
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
             className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto"
         >
-          Let's turn your vision into a reality. Click the button below to begin the journey.
+          {t('cta.subtitle')}
         </motion.p>
         <div className="mt-8">
           <motion.a
@@ -44,7 +45,7 @@ const CTA: React.FC = () => {
             }}
             className="inline-block bg-brand-pink text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg"
           >
-            Bring My Idea to Life
+            {t('cta.button')}
           </motion.a>
         </div>
       </div>

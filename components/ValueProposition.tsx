@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Target, Smartphone, GitBranch } from 'lucide-react';
 import { motion, type Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from '../contexts/LanguageContext';
 
 interface ValueCardProps {
   icon: React.ReactNode;
@@ -58,6 +58,7 @@ const ValueCard: React.FC<ValueCardProps> = ({ icon, title, description, color }
 };
 
 const ValueProposition: React.FC = () => {
+  const { t } = useTranslation();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -76,20 +77,20 @@ const ValueProposition: React.FC = () => {
   const values = [
     {
       icon: <Target size={40} />,
-      title: 'Highly Tailored',
-      description: 'Prototypes are crafted precisely to your specifications, ensuring your vision is perfectly captured.',
+      title: t('valueProposition.card1.title'),
+      description: t('valueProposition.card1.description'),
       color: 'brand-purple'
     },
     {
       icon: <Smartphone size={40} />,
-      title: 'Mobile-First Design',
-      description: 'We prioritize a seamless mobile experience, creating responsive designs that look great on any device.',
+      title: t('valueProposition.card2.title'),
+      description: t('valueProposition.card2.description'),
       color: 'brand-magenta'
     },
     {
       icon: <GitBranch size={40} />,
-      title: 'Easy to Evolve',
-      description: 'Our prototypes are built for iteration, making it simple to adapt and refine your ideas as you go.',
+      title: t('valueProposition.card3.title'),
+      description: t('valueProposition.card3.description'),
       color: 'brand-pink'
     },
   ];
@@ -103,8 +104,8 @@ const ValueProposition: React.FC = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-blue dark:text-white">Agile, Modern, and Trustworthy</h2>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">Our approach is designed for speed and quality.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-blue dark:text-white">{t('valueProposition.title')}</h2>
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">{t('valueProposition.subtitle')}</p>
         </motion.div>
         <motion.div
           ref={ref}

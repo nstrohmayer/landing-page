@@ -1,23 +1,23 @@
 export const en = {
   header: {
-    greeting: '"Do you like this website? Does it feel nice? I prototyped this in less than an hour and want to show you how it works and how it can bring value to you and your business."',
+    greeting: "How does this website feel to you? I designed this prototype in under an hour, and I’m eager to show you how it works—and how it can add real value to you and your business.",
     location: 'Amsterdam',
     learnHow: 'Learn How'
   },
   valueProposition: {
     title: 'Agile, Modern, and Trustworthy',
-    subtitle: 'Our approach is designed for speed and quality.',
+    subtitle: 'We combine speed and quality in our approach, ensuring your project is executed with precision and care.',
     card1: {
       title: 'Highly Tailored',
-      description: 'Prototypes are crafted precisely to your specifications, ensuring your vision is perfectly captured.'
+      description: 'Every prototype is crafted to your unique specifications, so your vision is faithfully represented.'
     },
     card2: {
       title: 'Mobile-First Design',
-      description: 'We prioritize a seamless mobile experience, creating responsive designs that look great on any device.'
+      description: 'We focus on delivering a seamless mobile experience, ensuring your design is fully responsive and looks great on any device.'
     },
     card3: {
       title: 'Easy to Evolve',
-      description: 'Our prototypes are built for iteration, making it simple to adapt and refine your ideas as you go.'
+      description: 'Our prototypes are built for adaptability, allowing you to refine and iterate your ideas as you progress.'
     }
   },
   process: {
@@ -25,7 +25,7 @@ export const en = {
     subtitle: 'A clear and iterative journey from idea to reality.',
     step1: {
       title: "(Optional) Let's Talk",
-      description: "We can sit together and talk about what you want to modernize, try out, or build."
+      description: "Let’s chat about what you want to modernize, explore, or build together."
     },
     step2: {
       title: "I Prototype Your Idea For Free",
@@ -48,17 +48,17 @@ export const en = {
     title: 'Answering Your Questions',
     subtitle: "We believe in transparency. Here's what you might be thinking.",
     q1: {
-      question: "Why should I waste my time setting this prototype up with you?",
-      answer: "You will 100% learn about how AI prompting works with modern tools so that you can tinker and finish your own ideas in your time—without having to pay me or anyone else."
+      question: "What's the benefit of prototyping with you?",
+      answer: "By working together, you’ll gain hands-on experience with AI prompting and modern tools, empowering you to independently bring your ideas to life without relying on outside help."
     },
     q2: {
-      question: "How are you going to make money? You won't just do this for free, will you?",
-      answer: "I want to spread knowledge on these topics and convince you of their value. If you feel you lack the time to go this journey alone, need support from my years of experience, or want my input for use cases and visualizing your ideas, then I'm happy to work together. That's when I make money with you."
+      question: "What's the catch? Is this really free?",
+      answer: "I’m passionate about spreading knowledge and demonstrating the value of these tools. If you need further support or professional insight, I’m happy to continue collaborating with you. That’s when I earn by working alongside you."
     }
   },
   innovativeFeatures: {
     title: 'Integrate Innovative Features',
-    subtitle: 'Go beyond a simple webpage. We embed powerful, customized AI-driven tools directly into your prototype.',
+    subtitle: 'Go beyond a basic website with powerful, AI-driven tools embedded directly into your prototype.',
     feature1: {
       title: 'Automated Scheduling & Invoicing',
       summary: 'Streamline your bookings with automated calendar events, invoicing, and customer confirmations.',
@@ -92,7 +92,7 @@ export const en = {
   },
   cta: {
     title: 'Ready to get started?',
-    subtitle: "Let's turn your vision into a reality. Click the button below to begin the journey.",
+    subtitle: "Let’s bring your idea to life. Click below to begin the journey.",
     button: 'Bring My Idea to Life'
   },
   modal: {

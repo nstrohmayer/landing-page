@@ -2,24 +2,24 @@ import { Translations } from './en';
 
 export const nl: Translations = {
   header: {
-    greeting: '"Vind je deze website leuk? Voelt het prettig aan? Ik heb dit prototype in minder dan een uur gemaakt en wil je laten zien hoe het werkt en hoe het waarde kan toevoegen aan jou en je bedrijf."',
+    greeting: "Hoe voelt deze website voor u aan? Ik heb dit prototype in minder dan een uur ontworpen en ik sta te popelen om u te laten zien hoe het werkt - en hoe het echte waarde kan toevoegen aan u en uw bedrijf.",
     location: 'Amsterdam',
     learnHow: 'Ontdek Hoe'
   },
   valueProposition: {
     title: 'Agile, Modern en Betrouwbaar',
-    subtitle: 'Onze aanpak is ontworpen voor snelheid en kwaliteit.',
+    subtitle: 'Wij combineren snelheid en kwaliteit in onze aanpak, en zorgen ervoor dat uw project met precisie en zorg wordt uitgevoerd.',
     card1: {
       title: 'Zeer op maat gemaakt',
-      description: 'Prototypes worden precies volgens uw specificaties gemaakt, zodat uw visie perfect wordt vastgelegd.'
+      description: 'Elk prototype wordt vervaardigd volgens uw unieke specificaties, zodat uw visie getrouw wordt weergegeven.'
     },
     card2: {
       title: 'Mobile-First Ontwerp',
-      description: 'We geven prioriteit aan een naadloze mobiele ervaring en creëren responsieve ontwerpen die er op elk apparaat geweldig uitzien.'
+      description: 'We richten ons op het leveren van een naadloze mobiele ervaring, waarbij we ervoor zorgen dat uw ontwerp volledig responsief is en er op elk apparaat geweldig uitziet.'
     },
     card3: {
       title: 'Eenvoudig te Evolueren',
-      description: 'Onze prototypes zijn gebouwd voor iteratie, waardoor het eenvoudig is om uw ideeën gaandeweg aan te passen en te verfijnen.'
+      description: 'Onze prototypes zijn gebouwd voor aanpasbaarheid, zodat u uw ideeën kunt verfijnen en herhalen naarmate u vordert.'
     }
   },
   process: {
@@ -27,7 +27,7 @@ export const nl: Translations = {
     subtitle: 'Een duidelijke en iteratieve reis van idee naar realiteit.',
     step1: {
       title: "(Optioneel) Laten we praten",
-      description: "We kunnen samenzitten en praten over wat u wilt moderniseren, uitproberen of bouwen."
+      description: "Laten we praten over wat u wilt moderniseren, verkennen of samen bouwen."
     },
     step2: {
       title: "Ik prototypeer uw idee GRATIS",
@@ -50,17 +50,17 @@ export const nl: Translations = {
     title: 'Uw vragen beantwoord',
     subtitle: 'Wij geloven in transparantie. Hier is wat u misschien denkt.',
     q1: {
-      question: "Waarom zou ik mijn tijd verspillen met het opzetten van dit prototype met u?",
-      answer: "U leert 100% hoe AI-prompting met moderne tools werkt, zodat u zelf kunt sleutelen en uw eigen ideeën kunt afmaken - zonder mij of iemand anders te hoeven betalen."
+      question: "Wat is het voordeel van prototypen met u?",
+      answer: "Door samen te werken, doet u praktijkervaring op met AI-prompting en moderne tools, waardoor u in staat bent uw ideeën zelfstandig tot leven te brengen zonder externe hulp."
     },
     q2: {
-      question: "Hoe gaat u geld verdienen? U doet dit toch niet gratis?",
-      answer: "Ik wil kennis over deze onderwerpen verspreiden en u overtuigen van hun waarde. Als u het gevoel heeft dat u de tijd mist om deze reis alleen te maken, ondersteuning nodig heeft van mijn jarenlange ervaring, of mijn inbreng wilt voor use-cases en het visualiseren van uw ideeën, dan werk ik graag met u samen. Dan verdien ik geld met u."
+      question: "Wat is het addertje onder het gras? Is dit echt gratis?",
+      answer: "Ik ben gepassioneerd over het delen van kennis en het aantonen van de waarde van deze tools. Als u verdere ondersteuning of professioneel inzicht nodig heeft, werk ik graag met u samen. Op dat moment verdien ik door naast u te werken."
     }
   },
   innovativeFeatures: {
     title: 'Integreer Innovatieve Functies',
-    subtitle: 'Ga verder dan een simpele webpagina. We bouwen krachtige, op maat gemaakte AI-gestuurde tools rechtstreeks in uw prototype.',
+    subtitle: 'Ga verder dan een basiswebsite met krachtige, AI-gestuurde tools die rechtstreeks in uw prototype zijn ingebouwd.',
     feature1: {
       title: 'Geautomatiseerde Planning & Facturering',
       summary: 'Stroomlijn uw boekingen met geautomatiseerde agenda-evenementen, facturering en klantbevestigingen.',
@@ -94,7 +94,7 @@ export const nl: Translations = {
   },
   cta: {
     title: 'Klaar om te beginnen?',
-    subtitle: 'Laten we uw visie werkelijkheid maken. Klik op de onderstaande knop om de reis te beginnen.',
+    subtitle: 'Laten we uw idee tot leven brengen. Klik hieronder om de reis te beginnen.',
     button: 'Breng mijn idee tot leven'
   },
   modal: {
@@ -110,7 +110,7 @@ export const nl: Translations = {
     closeButton: 'Sluiten'
   },
   submissionsModal: {
-    title: 'Inzendingen Ideeën',
+    title: 'Idee-inzendingen',
     empty: 'Nog geen inzendingen.'
   },
   footer: {

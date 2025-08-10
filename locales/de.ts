@@ -2,24 +2,24 @@ import { Translations } from './en';
 
 export const de: Translations = {
   header: {
-    greeting: '"Gefällt Ihnen diese Webseite? Fühlt sie sich gut an? Ich habe diesen Prototyp in weniger als einer Stunde erstellt und möchte Ihnen zeigen, wie das funktioniert und wie es Ihnen und Ihrem Unternehmen einen Mehrwert bringen kann."',
+    greeting: "Wie fühlt sich diese Webseite für Sie an? Ich habe diesen Prototyp in unter einer Stunde entworfen und freue mich darauf, Ihnen zu zeigen, wie er funktioniert – und wie er echten Mehrwert für Sie und Ihr Unternehmen schaffen kann.",
     location: 'Amsterdam',
     learnHow: 'Erfahren Sie wie'
   },
   valueProposition: {
     title: 'Agil, Modern und Vertrauenswürdig',
-    subtitle: 'Unser Ansatz ist auf Geschwindigkeit und Qualität ausgelegt.',
+    subtitle: 'Wir vereinen Schnelligkeit und Qualität in unserem Ansatz und stellen sicher, dass Ihr Projekt mit Präzision und Sorgfalt umgesetzt wird.',
     card1: {
       title: 'Maßgeschneidert',
-      description: 'Prototypen werden präzise nach Ihren Vorgaben gefertigt, um sicherzustellen, dass Ihre Vision perfekt erfasst wird.'
+      description: 'Jeder Prototyp wird nach Ihren einzigartigen Spezifikationen gefertigt, sodass Ihre Vision originalgetreu abgebildet wird.'
     },
     card2: {
       title: 'Mobile-First-Design',
-      description: 'Wir priorisieren ein nahtloses mobiles Erlebnis und erstellen responsive Designs, die auf jedem Gerät gut aussehen.'
+      description: 'Wir konzentrieren uns auf ein nahtloses mobiles Erlebnis und stellen sicher, dass Ihr Design vollständig responsiv ist und auf jedem Gerät gut aussieht.'
     },
     card3: {
       title: 'Einfach zu entwickeln',
-      description: 'Unsere Prototypen sind für Iterationen konzipiert, was es einfach macht, Ihre Ideen im Laufe der Zeit anzupassen und zu verfeinern.'
+      description: 'Unsere Prototypen sind auf Anpassungsfähigkeit ausgelegt, sodass Sie Ihre Ideen im Laufe des Prozesses verfeinern und iterieren können.'
     }
   },
   process: {
@@ -27,7 +27,7 @@ export const de: Translations = {
     subtitle: 'Eine klare und iterative Reise von der Idee zur Realität.',
     step1: {
       title: "(Optional) Lassen Sie uns reden",
-      description: "Wir können uns zusammensetzen und darüber sprechen, was Sie modernisieren, ausprobieren oder bauen möchten."
+      description: "Lassen Sie uns darüber sprechen, was Sie modernisieren, erkunden oder gemeinsam aufbauen möchten."
     },
     step2: {
       title: "Ich erstelle kostenlos einen Prototyp Ihrer Idee",
@@ -50,17 +50,17 @@ export const de: Translations = {
     title: 'Beantwortung Ihrer Fragen',
     subtitle: 'Wir glauben an Transparenz. Hier ist, was Sie vielleicht denken.',
     q1: {
-      question: "Warum sollte ich meine Zeit damit verschwenden, diesen Prototyp mit Ihnen einzurichten?",
-      answer: "Sie werden zu 100% lernen, wie KI-Prompting mit modernen Werkzeugen funktioniert, sodass Sie in Ihrer Zeit tüfteln und Ihre eigenen Ideen fertigstellen können – ohne mich oder jemand anderen bezahlen zu müssen."
+      question: "Was ist der Vorteil, mit Ihnen einen Prototyp zu entwickeln?",
+      answer: "Durch unsere Zusammenarbeit gewinnen Sie praktische Erfahrung mit KI-Prompting und modernen Werkzeugen. Das befähigt Sie, Ihre Ideen selbstständig und ohne fremde Hilfe zum Leben zu erwecken."
     },
     q2: {
-      question: "Wie werden Sie Geld verdienen? Sie werden das doch nicht umsonst machen, oder?",
-      answer: "Ich möchte Wissen zu diesen Themen verbreiten und Sie von ihrem Wert überzeugen. Wenn Sie das Gefühl haben, Ihnen fehlt die Zeit, diesen Weg alleine zu gehen, Unterstützung aus meiner langjährigen Erfahrung benötigen oder meinen Input für Anwendungsfälle und die Visualisierung Ihrer Ideen wünschen, dann arbeite ich gerne mit Ihnen zusammen. Dann verdiene ich Geld mit Ihnen."
+      question: "Wo ist der Haken? Ist das wirklich kostenlos?",
+      answer: "Meine Leidenschaft ist es, Wissen zu teilen und den Wert dieser Werkzeuge zu demonstrieren. Sollten Sie weitere Unterstützung oder fachkundige Einblicke benötigen, freue ich mich auf eine weitere Zusammenarbeit. Dann verdiene ich, indem ich an Ihrer Seite arbeite."
     }
   },
   innovativeFeatures: {
     title: 'Integrieren Sie innovative Funktionen',
-    subtitle: 'Gehen Sie über eine einfache Webseite hinaus. Wir betten leistungsstarke, maßgeschneiderte KI-gesteuerte Tools direkt in Ihren Prototyp ein.',
+    subtitle: 'Gehen Sie über eine einfache Webseite hinaus – mit leistungsstarken, KI-gesteuerten Werkzeugen, die direkt in Ihren Prototyp integriert sind.',
     feature1: {
       title: 'Automatisierte Terminplanung & Rechnungsstellung',
       summary: 'Optimieren Sie Ihre Buchungen mit automatisierten Kalendereinträgen, Rechnungsstellung und Kundenbestätigungen.',
@@ -94,7 +94,7 @@ export const de: Translations = {
   },
   cta: {
     title: 'Bereit anzufangen?',
-    subtitle: 'Lassen Sie uns Ihre Vision Wirklichkeit werden. Klicken Sie auf die Schaltfläche unten, um die Reise zu beginnen.',
+    subtitle: 'Lassen Sie uns Ihre Idee zum Leben erwecken. Klicken Sie unten, um die Reise zu beginnen.',
     button: 'Meine Idee zum Leben erwecken'
   },
   modal: {

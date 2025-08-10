@@ -95,6 +95,22 @@ export const en = {
     subtitle: "Let's turn your vision into a reality. Click the button below to begin the journey.",
     button: 'Bring My Idea to Life'
   },
+  modal: {
+    title: "Let's Build Your Idea",
+    ideaLabel: 'Describe your idea (optional)',
+    automationLabel: 'What would you like to automate/digitalize?',
+    contactLabel: 'Your Email or Phone Number',
+    contactPlaceholder: 'So I can get back to you',
+    sendButton: 'Send Request',
+    linkedinButton: 'Connect on LinkedIn',
+    successTitle: 'Thank You!',
+    successMessage: "Your request has been sent. I'll get back to you shortly!",
+    closeButton: 'Close'
+  },
+  submissionsModal: {
+    title: 'Idea Submissions',
+    empty: 'No submissions yet.'
+  },
   footer: {
     copyright: '© {year} Your Ideas, Made Real. All rights reserved.'
   }

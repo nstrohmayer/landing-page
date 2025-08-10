@@ -97,6 +97,22 @@ export const nl: Translations = {
     subtitle: 'Laten we uw visie werkelijkheid maken. Klik op de onderstaande knop om de reis te beginnen.',
     button: 'Breng mijn idee tot leven'
   },
+  modal: {
+    title: 'Laten we uw idee bouwen',
+    ideaLabel: 'Beschrijf uw idee (optioneel)',
+    automationLabel: 'Wat wilt u automatiseren/digitaliseren?',
+    contactLabel: 'Uw e-mailadres of telefoonnummer',
+    contactPlaceholder: 'Zodat ik contact met u kan opnemen',
+    sendButton: 'Verzoek verzenden',
+    linkedinButton: 'Verbind op LinkedIn',
+    successTitle: 'Dank u!',
+    successMessage: 'Uw verzoek is verzonden. Ik neem spoedig contact met u op!',
+    closeButton: 'Sluiten'
+  },
+  submissionsModal: {
+    title: 'Inzendingen Ideeën',
+    empty: 'Nog geen inzendingen.'
+  },
   footer: {
     copyright: '© {year} Uw Ideeën, Gerealiseerd. Alle rechten voorbehouden.'
   }

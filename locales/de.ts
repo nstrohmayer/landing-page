@@ -97,6 +97,22 @@ export const de: Translations = {
     subtitle: 'Lassen Sie uns Ihre Vision Wirklichkeit werden. Klicken Sie auf die Schaltfläche unten, um die Reise zu beginnen.',
     button: 'Meine Idee zum Leben erwecken'
   },
+  modal: {
+    title: 'Lassen Sie uns Ihre Idee bauen',
+    ideaLabel: 'Beschreiben Sie Ihre Idee (optional)',
+    automationLabel: 'Was möchten Sie automatisieren/digitalisieren?',
+    contactLabel: 'Ihre E-Mail oder Telefonnummer',
+    contactPlaceholder: 'Damit ich mich bei Ihnen melden kann',
+    sendButton: 'Anfrage senden',
+    linkedinButton: 'Auf LinkedIn verbinden',
+    successTitle: 'Vielen Dank!',
+    successMessage: 'Ihre Anfrage wurde gesendet. Ich melde mich in Kürze bei Ihnen!',
+    closeButton: 'Schließen'
+  },
+  submissionsModal: {
+    title: 'Ideeneinreichungen',
+    empty: 'Noch keine Einreichungen.'
+  },
   footer: {
     copyright: '© {year} Ihre Ideen, verwirklicht. Alle Rechte vorbehalten.'
   }

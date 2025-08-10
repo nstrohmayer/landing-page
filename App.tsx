@@ -8,22 +8,25 @@ import CTA from './components/CTA';
 import Footer from './components/Footer';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
+import { SubmissionsProvider } from './contexts/SubmissionsContext';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <div className="bg-white dark:bg-gray-900 transition-colors duration-500">
-          <Header />
-          <main>
-            <ValueProposition />
-            <Process />
-            <Faq />
-            <InnovativeFeatures />
-            <CTA />
-          </main>
-          <Footer />
-        </div>
+        <SubmissionsProvider>
+          <div className="bg-white dark:bg-gray-900 transition-colors duration-500">
+            <Header />
+            <main>
+              <ValueProposition />
+              <Process />
+              <Faq />
+              <InnovativeFeatures />
+              <CTA />
+            </main>
+            <Footer />
+          </div>
+        </SubmissionsProvider>
       </LanguageProvider>
     </ThemeProvider>
   );
